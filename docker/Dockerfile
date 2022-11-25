@@ -6,9 +6,9 @@ COPY ../go.mod ./
 RUN go mod download
 
 COPY *.go ./
-
+RUN go get github/
 RUN go build -o /main
 
-EXPOSE 8080
+EXPOSE 8081
 
-CMD [ "/main" , "-p=8080"]
+CMD [ "/main" , "-p=8081"]
