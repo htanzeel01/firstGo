@@ -10,6 +10,6 @@ go get github.com/gorilla/mux
 COPY *.go ./
 RUN go build -o /main
 
-EXPOSE 8080
+EXPOSE 8081
 
-CMD [ "/main" , "-p=8080"]
+CMD [ "/main" , "-p=8081"]
